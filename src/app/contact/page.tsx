@@ -5,7 +5,7 @@ import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { motion } from 'framer-motion';
-import { Phone, MapPin, Clock, Mail, Globe, MessageCircle, Sparkles } from 'lucide-react';
+import { Phone, MapPin, Clock, Mail, MessageCircle, Sparkles } from 'lucide-react';
 
 export default function Contact() {
   const locations = [
@@ -23,7 +23,7 @@ export default function Contact() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="https://loremflickr.com/1920/1080/pest,control,office"
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
             alt="Contact us for pest control"
             className="w-full h-full object-cover"
           />
@@ -36,7 +36,7 @@ export default function Contact() {
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -65,10 +65,10 @@ export default function Contact() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-32 bg-white relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#D62828]/10 to-[#F4B400]/10 rounded-full blur-3xl opacity-50"></div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-20">
             {/* Contact Info */}
             <motion.div
@@ -97,37 +97,37 @@ export default function Contact() {
 
               <div className="space-y-8 mb-12">
                 <div className="flex items-start gap-6 group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#D62828]/30 group-hover:scale-110 transition-transform duration-300">
-                    <Phone className="text-white" size={32} />
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#D62828]/30 group-hover:scale-110 transition-transform duration-300">
+                    <Phone className="text-white" size={22} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-xl mb-2">Phone / WhatsApp</h4>
-                    <a href="tel:+265991380581" className="text-gray-600 hover:text-[#D62828] transition-colors text-lg">
+                    <h4 className="font-bold text-gray-900 text-lg md:text-xl mb-1 md:mb-2">Phone / WhatsApp</h4>
+                    <a href="tel:+265991380581" className="text-gray-600 hover:text-[#D62828] transition-colors text-base md:text-lg">
                       +265 991 380 581
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-6 group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#D62828]/30 group-hover:scale-110 transition-transform duration-300">
-                    <Mail className="text-white" size={32} />
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#D62828]/30 group-hover:scale-110 transition-transform duration-300">
+                    <Mail className="text-white" size={22} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-xl mb-2">Email</h4>
-                    <a href="mailto:info@championfumigation.com" className="text-gray-600 hover:text-[#D62828] transition-colors text-lg">
+                    <h4 className="font-bold text-gray-900 text-lg md:text-xl mb-1 md:mb-2">Email</h4>
+                    <a href="mailto:info@championfumigation.com" className="text-gray-600 hover:text-[#D62828] transition-colors text-base md:text-lg">
                       info@championfumigation.com
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-6 group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#D62828]/30 group-hover:scale-110 transition-transform duration-300">
-                    <Clock className="text-white" size={32} />
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#D62828]/30 group-hover:scale-110 transition-transform duration-300">
+                    <Clock className="text-white" size={22} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-xl mb-2">Business Hours</h4>
-                    <p className="text-gray-600 text-lg">Monday - Saturday: 7:00 AM - 6:00 PM</p>
-                    <p className="text-gray-600 text-lg">Sunday: Emergency Only</p>
+                    <h4 className="font-bold text-gray-900 text-lg md:text-xl mb-1 md:mb-2">Business Hours</h4>
+                    <p className="text-gray-600 text-base md:text-lg">Monday - Saturday: 7:00 AM - 6:00 PM</p>
+                    <p className="text-gray-600 text-base md:text-lg">Sunday: Emergency Only</p>
                   </div>
                 </div>
               </div>
@@ -145,12 +145,12 @@ export default function Contact() {
                       transition={{ delay: index * 0.1 }}
                       className="flex items-center gap-6 glass rounded-2xl p-6 hover:shadow-xl transition-all duration-300 group"
                     >
-                      <div className="w-14 h-14 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#D62828]/30 group-hover:scale-110 transition-transform duration-300">
-                        <MapPin className="text-white" size={28} />
+                      <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#D62828]/30 group-hover:scale-110 transition-transform duration-300">
+                        <MapPin className="text-white" size={22} />
                       </div>
                       <div>
-                        <h4 className="font-bold text-gray-900 text-xl">{location.name}</h4>
-                        <p className="text-gray-600 font-light">{location.description}</p>
+                        <h4 className="font-bold text-gray-900 text-lg md:text-xl">{location.name}</h4>
+                        <p className="text-gray-600 font-light text-sm md:text-base">{location.description}</p>
                       </div>
                     </motion.div>
                   ))}
@@ -162,24 +162,12 @@ export default function Contact() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Follow Us</h3>
                 <div className="flex gap-4">
                   <a
-                    href="#"
-                    className="group w-14 h-14 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-xl flex items-center justify-center hover:shadow-2xl hover:shadow-[#D62828]/30 transition-all duration-300 hover:scale-110"
-                  >
-                    <Globe className="text-white" size={28} />
-                  </a>
-                  <a
-                    href="#"
-                    className="group w-14 h-14 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-xl flex items-center justify-center hover:shadow-2xl hover:shadow-[#D62828]/30 transition-all duration-300 hover:scale-110"
-                  >
-                    <Globe className="text-white" size={28} />
-                  </a>
-                  <a
                     href="https://wa.me/265991380581"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group w-14 h-14 bg-gradient-to-br from-[#25D366] to-[#128C7E] rounded-xl flex items-center justify-center hover:shadow-2xl hover:shadow-[#25D366]/30 transition-all duration-300 hover:scale-110"
+                    className="group w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#25D366] to-[#128C7E] rounded-xl flex items-center justify-center hover:shadow-2xl hover:shadow-[#25D366]/30 transition-all duration-300 hover:scale-110"
                   >
-                    <MessageCircle className="text-white" size={28} />
+                    <MessageCircle className="text-white" size={22} />
                   </a>
                 </div>
               </div>
@@ -199,7 +187,7 @@ export default function Contact() {
       </section>
 
       {/* Map Section */}
-      <section className="py-32 bg-gray-50 relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `
@@ -210,7 +198,7 @@ export default function Contact() {
           }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}

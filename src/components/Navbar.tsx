@@ -63,7 +63,7 @@ export default function Navbar() {
                 </motion.a>
               ))}
               <motion.a
-                href="tel:+265991380581"
+                href="/contact"
                 className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-[#D62828] to-[#a31e1e] text-white px-8 py-4 rounded-xl font-semibold hover:shadow-2xl hover:shadow-[#D62828]/30 transition-all duration-300"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -94,7 +94,7 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             className="lg:hidden fixed top-0 left-0 right-0 z-40 glass mt-0"
           >
-            <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
               <div className="flex flex-col gap-6">
                 {navLinks.map((link, index) => (
                   <motion.a
@@ -113,7 +113,7 @@ export default function Navbar() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.5 }}
-                  href="tel:+265991380581"
+                  href="/contact"
                   className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#D62828] to-[#a31e1e] text-white px-8 py-4 rounded-xl font-semibold"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

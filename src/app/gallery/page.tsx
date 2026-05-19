@@ -15,56 +15,56 @@ export default function Gallery() {
       id: 1,
       title: 'Warehouse Fumigation',
       category: 'Industrial',
-      image: 'https://loremflickr.com/800/800/warehouse,fumigation',
+      image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80',
       color: 'from-blue-500 to-blue-600',
     },
     {
       id: 2,
       title: 'Agricultural Fumigation',
       category: 'Agricultural',
-      image: 'https://loremflickr.com/800/800/agriculture,grain,storage',
+      image: 'https://images.unsplash.com/photo-1574943320219-553eb213f52d?w=800&q=80',
       color: 'from-green-500 to-green-600',
     },
     {
       id: 3,
       title: 'Termite Treatment',
       category: 'Residential',
-      image: 'https://loremflickr.com/800/800/termite,wood',
+      image: 'https://images.unsplash.com/photo-1591543620767-582b2e760425?w=800&q=80',
       color: 'from-orange-500 to-orange-600',
     },
     {
       id: 4,
       title: 'Pest Control Spraying',
       category: 'Commercial',
-      image: 'https://loremflickr.com/800/800/pest,control,spray',
+      image: 'https://images.unsplash.com/photo-1585421514738-01798e348b14?w=800&q=80',
       color: 'from-red-500 to-red-600',
     },
     {
       id: 5,
       title: 'Protective Team',
       category: 'Team',
-      image: 'https://loremflickr.com/800/800/exterminator,hazmat',
+      image: 'https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=800&q=80',
       color: 'from-purple-500 to-purple-600',
     },
     {
       id: 6,
       title: 'Equipment Setup',
       category: 'Equipment',
-      image: 'https://loremflickr.com/800/800/sprayer,pesticide',
+      image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80',
       color: 'from-gray-500 to-gray-600',
     },
     {
       id: 7,
       title: 'Safety Protocols',
       category: 'Safety',
-      image: 'https://loremflickr.com/800/800/safety,protective,gear',
+      image: 'https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?w=800&q=80',
       color: 'from-yellow-500 to-yellow-600',
     },
     {
       id: 8,
       title: 'After Treatment',
       category: 'Results',
-      image: 'https://loremflickr.com/800/800/clean,home',
+      image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80',
       color: 'from-teal-500 to-teal-600',
     },
   ];
@@ -78,7 +78,7 @@ export default function Gallery() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="https://loremflickr.com/1920/1080/fumigation,warehouse,industrial"
+            src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1920&q=80"
             alt="Fumigation work gallery"
             className="w-full h-full object-cover"
           />
@@ -91,7 +91,7 @@ export default function Gallery() {
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -120,7 +120,7 @@ export default function Gallery() {
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-32 bg-gray-50 relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `
@@ -131,7 +131,7 @@ export default function Gallery() {
           }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {galleryItems.map((item, index) => (
               <motion.div
@@ -173,14 +173,14 @@ export default function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-8"
+            className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4 md:p-8"
             onClick={() => setSelectedImage(null)}
           >
             <motion.button
               initial={{ scale: 0, rotate: -180 }}
               animate={{ scale: 1, rotate: 0 }}
               exit={{ scale: 0, rotate: 180 }}
-              className="absolute top-8 right-8 w-16 h-16 glass rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300"
+              className="absolute top-4 right-4 md:top-8 md:right-8 w-12 h-12 md:w-16 md:h-16 glass rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300"
               onClick={(e) => {
                 e.stopPropagation();
                 setSelectedImage(null);
@@ -194,7 +194,7 @@ export default function Gallery() {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
               transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
-              className="max-w-5xl w-full"
+              className="max-w-5xl w-full mx-4"
               onClick={(e) => e.stopPropagation()}
             >
               {galleryItems.find((item) => item.id === selectedImage) && (
@@ -206,14 +206,14 @@ export default function Gallery() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="p-10">
-                    <span className="text-[#D62828] text-sm font-bold uppercase tracking-wider">
+                  <div className="p-6 md:p-10">
+                    <span className="text-[#D62828] text-xs md:text-sm font-bold uppercase tracking-wider">
                       {galleryItems.find((item) => item.id === selectedImage)?.category}
                     </span>
-                    <h3 className="text-4xl font-bold text-gray-900 mt-3 mb-6 font-serif">
+                    <h3 className="text-2xl md:text-4xl font-bold text-gray-900 mt-3 mb-4 md:mb-6 font-serif">
                       {galleryItems.find((item) => item.id === selectedImage)?.title}
                     </h3>
-                    <p className="text-xl text-gray-600 font-light leading-relaxed">
+                    <p className="text-base md:text-xl text-gray-600 font-light leading-relaxed">
                       Professional fumigation services delivered with precision and care. Our team follows strict safety protocols to ensure effective pest control while protecting your property and the environment.
                     </p>
                   </div>

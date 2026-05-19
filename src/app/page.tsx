@@ -7,7 +7,7 @@ import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { motion } from 'framer-motion';
-import { Shield, CheckCircle, Clock, MapPin, Award, Users, Heart, Star, Sparkles } from 'lucide-react';
+import { Shield, CheckCircle, Clock, MapPin, Award, Users, Heart, Star, Sparkles, Search, Target, SprayCan, ShieldCheck } from 'lucide-react';
 
 export default function Home() {
   const services = [
@@ -80,13 +80,68 @@ export default function Home() {
     },
   ];
 
+  const processSteps = [
+    {
+      icon: Search,
+      title: 'Inspection',
+      description: 'Thorough assessment of your property to identify pest problems and risk areas.',
+    },
+    {
+      icon: Target,
+      title: 'Assessment',
+      description: 'Customized treatment plan based on inspection findings and your specific needs.',
+    },
+    {
+      icon: SprayCan,
+      title: 'Treatment',
+      description: 'Safe and effective application of approved fumigation methods by certified technicians.',
+    },
+    {
+      icon: ShieldCheck,
+      title: 'Protection Guarantee',
+      description: 'Follow-up visits and ongoing support to ensure lasting protection.',
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
 
+      {/* Trust Bar */}
+      <section className="bg-[#0a0a0a] border-y border-white/10 py-6 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+            <div className="flex items-center gap-2 text-white/80">
+              <span className="text-green-400 text-lg">✅</span>
+              <span className="text-xs md:text-sm font-semibold uppercase tracking-wider">EPA-Approved Chemicals</span>
+            </div>
+            <div className="hidden md:block w-px h-6 bg-white/20"></div>
+            <div className="flex items-center gap-2 text-white/80">
+              <span className="text-[#F4B400] text-lg">🏅</span>
+              <span className="text-xs md:text-sm font-semibold uppercase tracking-wider">Certified Technicians</span>
+            </div>
+            <div className="hidden md:block w-px h-6 bg-white/20"></div>
+            <div className="flex items-center gap-2 text-white/80">
+              <span className="text-red-400 text-lg">⚡</span>
+              <span className="text-xs md:text-sm font-semibold uppercase tracking-wider">24/7 Emergency Response</span>
+            </div>
+            <div className="hidden md:block w-px h-6 bg-white/20"></div>
+            <div className="flex items-center gap-2 text-white/80">
+              <span className="text-blue-400 text-lg">🛡️</span>
+              <span className="text-xs md:text-sm font-semibold uppercase tracking-wider">100% Satisfaction Guarantee</span>
+            </div>
+            <div className="hidden md:block w-px h-6 bg-white/20"></div>
+            <div className="flex items-center gap-2 text-white/80">
+              <span className="text-green-400 text-lg">🌍</span>
+              <span className="text-xs md:text-sm font-semibold uppercase tracking-wider">Nationwide Coverage</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
-      <section className="py-32 bg-gray-50 relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-gray-50 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
@@ -98,7 +153,7 @@ export default function Home() {
           }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -140,7 +195,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-32 bg-[#0a0a0a] relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-[#0a0a0a] relative overflow-hidden">
         {/* Background Gradient */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a]"></div>
@@ -148,7 +203,7 @@ export default function Home() {
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <motion.div
               initial={{ opacity: 0, x: -60 }}
@@ -174,7 +229,7 @@ export default function Home() {
                 We don't just spray — we solve. Our expert technicians use proven, safe methods to deliver uncompromising protection that lasts.
               </p>
 
-              <div className="grid grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
                 {whyChooseUs.map((item, index) => (
                   <motion.div
                     key={item.title}
@@ -184,11 +239,11 @@ export default function Home() {
                     transition={{ delay: index * 0.1 }}
                     className="flex items-start gap-4 group"
                   >
-                    <div className="w-14 h-14 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <item.icon className="text-white" size={24} />
+                    <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <item.icon className="text-white" size={22} />
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold mb-2 text-lg">{item.title}</h4>
+                      <h4 className="text-white font-semibold mb-1 md:mb-2 text-base md:text-lg">{item.title}</h4>
                       <p className="text-gray-400 text-sm font-light">{item.description}</p>
                     </div>
                   </motion.div>
@@ -206,10 +261,10 @@ export default function Home() {
               <div className="glass rounded-3xl p-10 relative">
                 <div className="grid grid-cols-2 gap-6">
                   {[
-                    { src: 'https://loremflickr.com/400/400/termite', alt: 'Termite control' },
-                    { src: 'https://loremflickr.com/400/400/bee,beehive', alt: 'Bee removal' },
-                    { src: 'https://loremflickr.com/400/400/rat,rodent', alt: 'Rodent control' },
-                    { src: 'https://loremflickr.com/400/400/mosquito', alt: 'Mosquito control' },
+                    { src: 'https://images.unsplash.com/photo-1591543620767-582b2e760425?w=400&q=80', alt: 'Termite control' },
+                    { src: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&q=80', alt: 'Bee removal' },
+                    { src: 'https://images.unsplash.com/photo-1548550041-340695cc6952?w=400&q=80', alt: 'Rodent control' },
+                    { src: 'https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?w=400&q=80', alt: 'Mosquito control' },
                   ].map((item, index) => (
                     <motion.div
                       key={index}
@@ -235,8 +290,68 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Process Section */}
+      <section className="py-16 md:py-24 lg:py-32 bg-[#0a0a0a] relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a]"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#D62828] rounded-full blur-[200px] opacity-10"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="text-center mb-20"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-3 glass px-6 py-3 rounded-full"
+            >
+              <Sparkles className="text-[#F4B400]" size={16} />
+              <span className="text-white/90 text-sm font-semibold tracking-wide uppercase">
+                Our Process
+              </span>
+            </motion.div>
+            <h2 className="text-5xl md:text-6xl font-bold text-white mt-8 mb-6 font-serif">
+              How We <span className="gradient-text">Work</span>
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {processSteps.map((step, index) => (
+              <motion.div
+                key={step.title}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ delay: index * 0.1 }}
+                className="glass rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 group relative"
+              >
+                <div className="absolute top-4 right-4 w-8 h-8 bg-[#D62828] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  {index + 1}
+                </div>
+                <motion.div
+                  whileHover={{ rotate: 360, scale: 1.1 }}
+                  transition={{ duration: 0.6 }}
+                  className="w-16 h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center mb-6 group-hover:shadow-2xl group-hover:shadow-[#D62828]/30 transition-all"
+                >
+                  <step.icon className="text-white" size={32} />
+                </motion.div>
+                <h3 className="text-xl font-bold text-white mb-3 font-serif">{step.title}</h3>
+                <p className="text-gray-400 font-light leading-relaxed">{step.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
-      <section className="py-32 bg-gray-50 relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `
@@ -247,7 +362,7 @@ export default function Home() {
           }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -298,10 +413,10 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-32 bg-white relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#D62828]/10 to-[#F4B400]/10 rounded-full blur-3xl opacity-50"></div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-20">
             <motion.div
               initial={{ opacity: 0, x: -60 }}
@@ -329,32 +444,32 @@ export default function Home() {
 
               <div className="space-y-8">
                 <div className="flex items-center gap-6 group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#D62828]/30">
-                    <Shield className="text-white" size={28} />
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#D62828]/30">
+                    <Shield className="text-white" size={22} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-xl mb-1">Call Us</h4>
-                    <a href="tel:+265991380581" className="text-gray-600 hover:text-[#D62828] transition-colors text-lg">
+                    <h4 className="font-bold text-gray-900 text-lg md:text-xl mb-1">Call Us</h4>
+                    <a href="tel:+265991380581" className="text-gray-600 hover:text-[#D62828] transition-colors text-base md:text-lg">
                       +265 991 380 581
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-6 group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#D62828]/30">
-                    <MapPin className="text-white" size={28} />
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#D62828]/30">
+                    <MapPin className="text-white" size={22} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-xl mb-1">Locations</h4>
-                    <p className="text-gray-600 text-lg">Lilongwe · Mzuzu · Blantyre</p>
+                    <h4 className="font-bold text-gray-900 text-lg md:text-xl mb-1">Locations</h4>
+                    <p className="text-gray-600 text-base md:text-lg">Lilongwe · Mzuzu · Blantyre</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-6 group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#D62828]/30">
-                    <Clock className="text-white" size={28} />
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#D62828]/30">
+                    <Clock className="text-white" size={22} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-xl mb-1">Hours</h4>
-                    <p className="text-gray-600 text-lg">Mon – Sat: 7am – 6pm</p>
+                    <h4 className="font-bold text-gray-900 text-lg md:text-xl mb-1">Hours</h4>
+                    <p className="text-gray-600 text-base md:text-lg">Mon – Sat: 7am – 6pm</p>
                   </div>
                 </div>
               </div>

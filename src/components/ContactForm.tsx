@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -15,8 +15,9 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
-    alert('Thank you for your request! We will contact you shortly.');
+    const message = `Hello Champion Fumigation Services!%0A%0A*New Service Request*%0A%0A*Name:* ${formData.fullName}%0A*Phone:* ${formData.phoneNumber}%0A*Location:* ${formData.location}%0A*Service:* ${formData.service}%0A*Message:* ${formData.message || 'No additional details'}`;
+    window.open(`https://wa.me/265991380581?text=${message}`, '_blank');
+    alert('Thank you! Redirecting you to WhatsApp...');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -33,7 +34,7 @@ export default function ContactForm() {
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
       onSubmit={handleSubmit}
-      className="glass rounded-3xl p-10 shadow-2xl space-y-8 relative overflow-hidden"
+      className="glass rounded-3xl p-6 md:p-10 shadow-2xl space-y-8 relative overflow-hidden"
     >
       {/* Decorative Gradient */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#D62828]/20 to-[#F4B400]/20 rounded-full blur-3xl opacity-50"></div>

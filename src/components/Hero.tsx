@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="https://loremflickr.com/1920/1080/pest,control,exterminator"
+          src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1920&q=80"
           alt="Professional pest control"
           className="w-full h-full object-cover"
         />
@@ -36,7 +36,7 @@ export default function Hero() {
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a0a]"></div>
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-32 lg:py-40">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 lg:py-40">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
           <motion.div
@@ -108,21 +108,21 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="flex items-center gap-8 pt-8 border-t border-white/10"
+              className="flex flex-wrap items-center justify-center md:justify-start gap-6 md:gap-8 pt-8 border-t border-white/10"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-white">15+</div>
-                <div className="text-sm text-gray-400">Years Experience</div>
+                <div className="text-2xl md:text-3xl font-bold text-white">15+</div>
+                <div className="text-xs md:text-sm text-gray-400">Years Experience</div>
               </div>
-              <div className="w-px h-12 bg-white/20"></div>
+              <div className="w-px h-10 md:h-12 bg-white/20 hidden sm:block"></div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white">5000+</div>
-                <div className="text-sm text-gray-400">Projects Completed</div>
+                <div className="text-2xl md:text-3xl font-bold text-white">5000+</div>
+                <div className="text-xs md:text-sm text-gray-400">Projects Completed</div>
               </div>
-              <div className="w-px h-12 bg-white/20"></div>
+              <div className="w-px h-10 md:h-12 bg-white/20 hidden sm:block"></div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white">100%</div>
-                <div className="text-sm text-gray-400">Satisfaction Rate</div>
+                <div className="text-2xl md:text-3xl font-bold text-white">100%</div>
+                <div className="text-xs md:text-sm text-gray-400">Satisfaction Rate</div>
               </div>
             </motion.div>
           </motion.div>
@@ -165,11 +165,12 @@ export default function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div
+      <motion.a
+        href="#services"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 cursor-pointer"
       >
         <motion.div
           animate={{ y: [0, 12, 0] }}
@@ -181,7 +182,7 @@ export default function Hero() {
             <div className="w-1.5 h-3 bg-gradient-to-b from-[#F4B400] to-[#D62828] rounded-full"></div>
           </div>
         </motion.div>
-      </motion.div>
+      </motion.a>
     </section>
   );
 }

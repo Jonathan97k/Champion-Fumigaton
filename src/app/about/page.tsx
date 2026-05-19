@@ -52,7 +52,7 @@ export default function About() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="https://loremflickr.com/1920/1080/pest,control,team"
+            src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=1920&q=80"
             alt="About Champion Fumigation"
             className="w-full h-full object-cover"
           />
@@ -65,7 +65,7 @@ export default function About() {
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -89,12 +89,21 @@ export default function About() {
             <p className="text-xl text-gray-300 max-w-3xl mx-auto font-light">
               Industry-leading fumigation services built on trust, expertise, and unwavering commitment to excellence.
             </p>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.4 }}
+              className="inline-flex items-center gap-2 bg-[#D62828]/20 border border-[#D62828]/30 px-5 py-2 rounded-full mt-6"
+            >
+              <span className="text-[#F4B400] text-sm font-bold">Est. 2011</span>
+              <span className="text-white/70 text-sm">· Serving Malawi for 15+ Years</span>
+            </motion.div>
           </motion.div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gray-50 relative overflow-hidden">
+      <section className="py-12 md:py-20 bg-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `
@@ -105,7 +114,7 @@ export default function About() {
           }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <motion.div
@@ -125,10 +134,10 @@ export default function About() {
       </section>
 
       {/* Story Section */}
-      <section className="py-32 bg-white relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#D62828]/10 to-[#F4B400]/10 rounded-full blur-3xl opacity-50"></div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <motion.div
               initial={{ opacity: 0, x: -60 }}
@@ -168,9 +177,9 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="relative"
             >
-              <div className="glass rounded-3xl p-10 relative overflow-hidden">
+              <div className="glass rounded-3xl p-6 md:p-10 relative overflow-hidden">
                 <img 
-                  src="https://loremflickr.com/800/800/exterminator,fumigation"
+                  src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80"
                   alt="Professional pest control team"
                   className="w-full aspect-square object-cover rounded-2xl"
                 />
@@ -184,9 +193,9 @@ export default function About() {
               <motion.div
                 animate={{ y: [0, -12, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-8 -right-8 glass bg-gradient-to-br from-[#D62828] to-[#a31e1e] px-10 py-6 rounded-2xl shadow-2xl shadow-[#D62828]/30"
+                className="hidden sm:block absolute -bottom-8 -right-8 glass bg-gradient-to-br from-[#D62828] to-[#a31e1e] px-6 md:px-10 py-4 md:py-6 rounded-2xl shadow-2xl shadow-[#D62828]/30"
               >
-                <div className="text-white font-bold text-2xl">15+ Years</div>
+                <div className="text-white font-bold text-xl md:text-2xl">15+ Years</div>
                 <div className="text-white/80 text-xs font-semibold uppercase tracking-wider mt-1">Of Excellence</div>
               </motion.div>
             </motion.div>
@@ -195,14 +204,14 @@ export default function About() {
       </section>
 
       {/* Process Section */}
-      <section className="py-32 bg-[#0a0a0a] relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-[#0a0a0a] relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a]"></div>
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#D62828] rounded-full blur-[200px] opacity-10"></div>
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -255,7 +264,7 @@ export default function About() {
       </section>
 
       {/* Values Section */}
-      <section className="py-32 bg-gray-50 relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `
@@ -266,7 +275,7 @@ export default function About() {
           }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}

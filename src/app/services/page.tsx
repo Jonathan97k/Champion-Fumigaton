@@ -14,56 +14,56 @@ export default function Services() {
       title: 'Termite Proofing',
       description: 'Protect buildings and structures from termite damage with our advanced treatment methods. We use specialized chemicals that create a barrier around your property, preventing termites from entering and destroying wooden structures.',
       features: ['Pre-construction treatment', 'Post-construction treatment', 'Soil treatment', 'Wood treatment', 'Annual maintenance plans'],
-      image: 'https://loremflickr.com/600/400/termite,wood,damage',
+      image: 'https://images.unsplash.com/photo-1591543620767-582b2e760425?w=600&q=80',
     },
     {
       icon: Users,
       title: 'Rodent Control',
       description: 'Safe elimination and prevention solutions for mice, rats, and other rodents. Our comprehensive approach includes identification, elimination, and prevention to keep your property rodent-free.',
       features: ['Trapping and removal', 'Bait station installation', 'Exclusion services', 'Sanitation recommendations', 'Preventive maintenance'],
-      image: 'https://loremflickr.com/600/400/rat,rodent',
+      image: 'https://images.unsplash.com/photo-1548550041-34068e3a56b9?w=600&q=80',
     },
     {
       icon: Heart,
       title: 'Agricultural Product Fumigation',
       description: 'Protect stored crops from infestation and spoilage with specialized treatments. We help farmers and storage facilities maintain the quality and safety of their agricultural products.',
       features: ['Grain storage fumigation', 'Warehouse treatment', 'Export certification', 'Quality preservation', 'Compliance with international standards'],
-      image: 'https://loremflickr.com/600/400/grain,silo,storage',
+      image: 'https://images.unsplash.com/photo-1574943320219-553eb213f52d?w=600&q=80',
     },
     {
       icon: SprayCan,
       title: 'Indoor Residual Spraying (IRS)',
       description: 'Long-lasting indoor pest prevention for mosquitoes and other flying insects. Our IRS treatments create a protective barrier on walls and surfaces that kills insects on contact.',
       features: ['Mosquito control', 'Fly control', 'Long-lasting protection', 'Safe for indoor use', 'Regular treatment schedules'],
-      image: 'https://loremflickr.com/600/400/mosquito,spray',
+      image: 'https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?w=600&q=80',
     },
     {
       icon: CheckCircle,
       title: 'Herbicide Spraying',
       description: 'Effective weed control solutions for agricultural and residential properties. We use selective herbicides that target unwanted vegetation while preserving your desired plants.',
       features: ['Selective weed control', 'Pre-emergent treatment', 'Post-emergent treatment', 'Vegetation management', 'Environmentally friendly options'],
-      image: 'https://loremflickr.com/600/400/herbicide,farm,spray',
+      image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&q=80',
     },
     {
       icon: Award,
       title: 'Industrial Spraying',
       description: 'Large-scale industrial pest treatment for warehouses, factories, and commercial facilities. Our industrial solutions are designed to handle complex pest challenges in large spaces.',
       features: ['Warehouse fumigation', 'Factory treatment', 'Food processing facilities', 'Commercial kitchens', 'Custom treatment plans'],
-      image: 'https://loremflickr.com/600/400/warehouse,industrial',
+      image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=80',
     },
     {
       icon: Star,
       title: 'Hygiene Solutions',
       description: 'Commercial sanitation treatments to maintain clean and pest-free environments. Our hygiene services complement our pest control treatments to ensure comprehensive protection.',
       features: ['Deep cleaning', 'Sanitization', 'Disinfection', 'Odor control', 'Preventive treatments'],
-      image: 'https://loremflickr.com/600/400/cleaning,disinfection',
+      image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80',
     },
     {
       icon: Bug,
       title: 'Bee Removal Services',
       description: 'Safe bee relocation and treatment to keep your premises sting-free. We prioritize bee conservation while ensuring your safety through humane removal methods.',
       features: ['Humane bee removal', 'Hive relocation', 'Swarm removal', 'Bee-friendly methods', 'Prevention advice'],
-      image: 'https://loremflickr.com/600/400/bee,beehive',
+      image: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=600&q=80',
     },
   ];
 
@@ -76,7 +76,7 @@ export default function Services() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="https://loremflickr.com/1920/1080/exterminator,pest,control"
+            src="https://images.unsplash.com/photo-1585421514738-01798e348b14?w=1920&q=80"
             alt="Professional fumigation services"
             className="w-full h-full object-cover"
           />
@@ -89,7 +89,7 @@ export default function Services() {
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -118,7 +118,7 @@ export default function Services() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-32 bg-gray-50 relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `
@@ -129,7 +129,7 @@ export default function Services() {
           }}></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <motion.div
@@ -143,24 +143,24 @@ export default function Services() {
                 {/* Decorative Circle */}
                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-[#D62828]/20 to-[#F4B400]/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                <div className="p-10 relative">
-                  <div className="aspect-video mb-8 rounded-2xl overflow-hidden">
+                <div className="p-6 md:p-10 relative">
+                  <div className="aspect-video mb-6 md:mb-8 rounded-2xl overflow-hidden">
                     <img 
                       src={service.image} 
                       alt={service.title}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="flex items-start gap-6 mb-6">
+                  <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 mb-6">
                     <motion.div
                       whileHover={{ rotate: 360, scale: 1.1 }}
                       transition={{ duration: 0.6 }}
-                      className="w-16 h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#D62828]/30"
+                      className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#D62828]/30"
                     >
-                      <service.icon className="text-white" size={32} />
+                      <service.icon className="text-white" size={28} />
                     </motion.div>
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-3 font-serif">{service.title}</h3>
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2 md:mb-3 font-serif">{service.title}</h3>
                       <p className="text-gray-600 leading-relaxed font-light">{service.description}</p>
                     </div>
                   </div>
@@ -196,14 +196,14 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-[#0a0a0a] relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-[#0a0a0a] relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a]"></div>
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#D62828] rounded-full blur-[200px] opacity-10"></div>
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
         </div>
 
-        <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}

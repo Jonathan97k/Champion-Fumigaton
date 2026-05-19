@@ -1,6 +1,6 @@
 'use client';
 
-import { Globe, MessageCircle, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MessageCircle, MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 export default function Footer() {
   const services = [
@@ -23,8 +23,8 @@ export default function Footer() {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16">
           {/* Brand */}
           <div className="space-y-8">
             <div className="flex items-center gap-4">
@@ -43,12 +43,6 @@ export default function Footer() {
               Industry-leading fumigation and pest control solutions across Malawi. Certified experts delivering uncompromising protection.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="group w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-[#D62828] transition-all duration-300 hover:scale-110">
-                <Globe size={20} />
-              </a>
-              <a href="#" className="group w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-[#D62828] transition-all duration-300 hover:scale-110">
-                <Globe size={20} />
-              </a>
               <a href="https://wa.me/265991380581" className="group w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-[#25D366] transition-all duration-300 hover:scale-110">
                 <MessageCircle size={20} />
               </a>
@@ -145,7 +139,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="border-t border-white/10 mt-12 md:mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-gray-500 text-sm">
             © 2026 Champion Fumigation Services. All Rights Reserved.
           </p>

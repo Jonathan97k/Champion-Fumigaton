@@ -1,6 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 const inter = Inter({
   weight: ['300', '400', '500', '600', '700', '800', '900'],
@@ -21,6 +26,10 @@ export const metadata: Metadata = {
   description: "Industry-leading pest control and fumigation services in Malawi. Certified experts delivering uncompromising protection for homes, businesses, and agricultural assets across Lilongwe, Mzuzu, and Blantyre.",
   keywords: ["pest control", "fumigation", "Malawi", "Lilongwe", "Mzuzu", "Blantyre", "termite proofing", "rodent control", "agricultural fumigation", "premium pest control"],
   authors: [{ name: "Champion Fumigation Services" }],
+  icons: {
+    icon: '/logo.jpg',
+    apple: '/logo.jpg',
+  },
   openGraph: {
     title: "Champion Fumigation Services | Premium Pest Control Malawi",
     description: "Industry-leading pest control and fumigation services in Malawi. Certified experts delivering uncompromising protection.",
