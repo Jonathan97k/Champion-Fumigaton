@@ -44,11 +44,11 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden relative z-[1]">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] bg-[#0a0a0a] flex items-center overflow-hidden">
+      <section className="relative min-h-[60vh] bg-[#0a0a0a] flex items-center overflow-hidden py-20">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
@@ -61,8 +61,8 @@ export default function About() {
 
         {/* Background Gradient */}
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#D62828] rounded-full blur-[200px] opacity-10"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#c9a84c] rounded-full blur-[200px] opacity-10"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#c9a84c] rounded-full blur-[200px] opacity-10"></div>
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
@@ -78,7 +78,7 @@ export default function About() {
               transition={{ delay: 0.2 }}
               className="inline-flex items-center gap-3 glass px-6 py-3 rounded-full"
             >
-              <Sparkles className="text-[#F4B400]" size={16} />
+              <Sparkles className="text-[#c9a84c]" size={16} />
               <span className="text-white/90 text-sm font-semibold tracking-wide uppercase">
                 About Us
               </span>
@@ -93,9 +93,9 @@ export default function About() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4 }}
-              className="inline-flex items-center gap-2 bg-[#D62828]/20 border border-[#D62828]/30 px-5 py-2 rounded-full mt-6"
+              className="inline-flex items-center gap-2 bg-[#c9a84c]/10 border border-[#c9a84c]/20 px-5 py-2 rounded-full mt-6"
             >
-              <span className="text-[#F4B400] text-sm font-bold">Est. 2011</span>
+              <span className="text-[#c9a84c] text-sm font-bold">Est. 2011</span>
               <span className="text-white/70 text-sm">· Serving Malawi for 15+ Years</span>
             </motion.div>
           </motion.div>
@@ -103,12 +103,12 @@ export default function About() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 md:py-20 bg-gray-50 relative overflow-hidden">
+      <section className="py-20 bg-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `
-              linear-gradient(rgba(214, 40, 40, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(214, 40, 40, 0.1) 1px, transparent 1px)
+              linear-gradient(rgba(201, 168, 76, 0.1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(201, 168, 76, 0.1) 1px, transparent 1px)
             `,
             backgroundSize: '80px 80px'
           }}></div>
@@ -134,8 +134,8 @@ export default function About() {
       </section>
 
       {/* Story Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#D62828]/10 to-[#F4B400]/10 rounded-full blur-3xl opacity-50"></div>
+      <section className="py-20 bg-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#c9a84c]/10 to-[#c9a84c]/10 rounded-full blur-3xl opacity-50"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
@@ -151,7 +151,7 @@ export default function About() {
                 viewport={{ once: true }}
                 className="inline-flex items-center gap-3 glass px-6 py-3 rounded-full"
               >
-                <Sparkles className="text-[#F4B400]" size={16} />
+              <Sparkles className="text-[#c9a84c]" size={16} />
                 <span className="text-gray-900 text-sm font-semibold tracking-wide uppercase">
                   Our Story
                 </span>
@@ -193,7 +193,7 @@ export default function About() {
               <motion.div
                 animate={{ y: [0, -12, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="hidden sm:block absolute -bottom-8 -right-8 glass bg-gradient-to-br from-[#D62828] to-[#a31e1e] px-6 md:px-10 py-4 md:py-6 rounded-2xl shadow-2xl shadow-[#D62828]/30"
+                className="hidden sm:block absolute -bottom-8 -right-8 glass bg-gradient-to-br from-[#c9a84c] to-[#b8973f] px-6 md:px-10 py-4 md:py-6 rounded-2xl shadow-2xl shadow-[#c9a84c]/30"
               >
                 <div className="text-white font-bold text-xl md:text-2xl">15+ Years</div>
                 <div className="text-white/80 text-xs font-semibold uppercase tracking-wider mt-1">Of Excellence</div>
@@ -204,11 +204,11 @@ export default function About() {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-[#0a0a0a] relative overflow-hidden">
+      <section className="py-20 bg-[#0a0a0a] relative overflow-hidden pb-24 mb-16">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a]"></div>
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#D62828] rounded-full blur-[200px] opacity-10"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#c9a84c] rounded-full blur-[200px] opacity-10"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#c9a84c] rounded-full blur-[200px] opacity-10"></div>
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -225,10 +225,10 @@ export default function About() {
               viewport={{ once: true }}
               className="inline-flex items-center gap-3 glass px-6 py-3 rounded-full"
             >
-              <Sparkles className="text-[#F4B400]" size={16} />
-              <span className="text-white/90 text-sm font-semibold tracking-wide uppercase">
-                Our Process
-              </span>
+                <Sparkles className="text-[#c9a84c]" size={16} />
+                <span className="text-gray-900 text-sm font-semibold tracking-wide uppercase">
+                  Our Story
+                </span>
             </motion.div>
             <h2 className="text-5xl md:text-6xl font-bold text-white mt-8 mb-6 font-serif">
               How We <span className="gradient-text">Work</span>
@@ -243,17 +243,17 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ delay: index * 0.1 }}
-                className="glass rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 group relative"
+                className="glass rounded-3xl p-8 pt-6 hover:shadow-2xl transition-all duration-500 group relative min-h-[200px] overflow-hidden"
               >
-                <div className="absolute top-4 right-4 w-8 h-8 bg-[#D62828] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                <div className="absolute top-4 right-4 w-8 h-8 bg-[#c9a84c]/10 border border-[#c9a84c]/20 rounded-full flex items-center justify-center text-[#c9a84c] font-bold text-sm">
                   {index + 1}
                 </div>
                 <motion.div
                   whileHover={{ rotate: 360, scale: 1.1 }}
                   transition={{ duration: 0.6 }}
-                  className="w-16 h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center mb-6 group-hover:shadow-2xl group-hover:shadow-[#D62828]/30 transition-all"
+                  className="w-16 h-16 bg-[rgba(201,168,76,0.1)] border border-[rgba(201,168,76,0.2)] rounded-2xl flex items-center justify-center mb-6 group-hover:shadow-2xl group-hover:shadow-[#c9a84c]/30 transition-all"
                 >
-                  <step.icon className="text-white" size={32} />
+                  <step.icon className="text-[#c9a84c]" size={32} />
                 </motion.div>
                 <h3 className="text-xl font-bold text-white mb-3 font-serif">{step.title}</h3>
                 <p className="text-gray-400 font-light leading-relaxed">{step.description}</p>
@@ -264,12 +264,12 @@ export default function About() {
       </section>
 
       {/* Values Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-gray-50 relative overflow-hidden">
+      <section className="py-20 pt-24 bg-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `
-              linear-gradient(rgba(214, 40, 40, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(214, 40, 40, 0.1) 1px, transparent 1px)
+              linear-gradient(rgba(201, 168, 76, 0.1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(201, 168, 76, 0.1) 1px, transparent 1px)
             `,
             backgroundSize: '80px 80px'
           }}></div>
@@ -289,7 +289,7 @@ export default function About() {
               viewport={{ once: true }}
               className="inline-flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-lg border border-gray-100"
             >
-              <Sparkles className="text-[#F4B400]" size={16} />
+              <Sparkles className="text-[#c9a84c]" size={16} />
               <span className="text-gray-900 text-sm font-semibold tracking-wide uppercase">
                 Our Values
               </span>
@@ -312,9 +312,9 @@ export default function About() {
                 <motion.div
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ duration: 0.3 }}
-                  className="w-20 h-20 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-[#D62828]/30"
+                  className="w-16 h-16 bg-[rgba(201,168,76,0.1)] border border-[rgba(201,168,76,0.2)] rounded-2xl flex items-center justify-center mx-auto mb-6"
                 >
-                  <value.icon className="text-white" size={40} />
+                  <value.icon className="text-[#c9a84c]" size={28} />
                 </motion.div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 font-serif">{value.title}</h3>
                 <p className="text-gray-600 font-light leading-relaxed">{value.description}</p>
@@ -323,6 +323,9 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Spacer for footer */}
+      <div className="min-h-[80px]"></div>
 
       <Footer />
       <WhatsAppButton />
