@@ -37,7 +37,7 @@ export default function BeeRemovalPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a]">
+    <div className="min-h-screen bg-[#0a0a0a] overflow-x-hidden">
       <Navbar />
       <section className="relative min-h-[70vh] bg-[#0a0a0a] flex items-center overflow-hidden">
         <div className="absolute inset-0">
