@@ -4,12 +4,12 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { motion } from 'framer-motion';
-import { Shield, SprayCan, Search, Target, ShieldCheck, CheckCircle, ArrowRight, Phone, AlertTriangle, Bee, Home, Users, Heart, Award, Star, Sparkles, Bug, TriangleAlert } from 'lucide-react';
+import { Shield, SprayCan, Search, Target, ShieldCheck, CheckCircle, ArrowRight, Phone, AlertTriangle, Home, Users, Heart, Award, Star, Sparkles, Bug, TriangleAlert } from 'lucide-react';
 import Link from 'next/link';
 
 export default function BeeRemovalPage() {
   const risks = [
-    { icon: Bee, title: 'Stinging Hazards', description: 'Bee swarms near homes and businesses pose serious stinging risks, especially to children, elderly, and allergic individuals.' },
+    { icon: Bug, title: 'Stinging Hazards', description: 'Bee swarms near homes and businesses pose serious stinging risks, especially to children, elderly, and allergic individuals.' },
     { icon: AlertTriangle, title: 'Structural Damage', description: 'Bees nesting in walls, attics, or roofs cause structural damage through honey seepage, wax buildup, and moisture.' },
     { icon: Home, title: 'Property Devaluation', description: 'Active bee infestations make properties difficult to sell or insure, reducing property value significantly.' },
   ];
