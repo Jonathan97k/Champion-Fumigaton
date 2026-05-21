@@ -16,48 +16,56 @@ export default function Home() {
       title: 'Termite Proofing',
       description: 'Protect buildings and structures from termite damage with our advanced treatment methods.',
       image: '/images/IMG-20260520-WA0003.jpg',
+      href: '/services/termite-proofing',
     },
     {
       icon: Users,
       title: 'Rodent Control',
       description: 'Safe elimination and prevention solutions for mice, rats, and other rodents.',
       image: '/images/IMG-20260520-WA0004.jpg',
+      href: '/services/rodent-control',
     },
     {
       icon: Heart,
       title: 'Agricultural Product Fumigation',
       description: 'Protect stored crops from infestation and spoilage with specialized treatments.',
       image: '/images/IMG-20260520-WA0005.jpg',
+      href: '/services/agricultural-fumigation',
     },
     {
       icon: Shield,
       title: 'Indoor Residual Spraying (IRS)',
       description: 'Long-lasting indoor pest prevention for mosquitoes and other flying insects.',
       image: '/images/IMG-20260520-WA0006.jpg',
+      href: '/services/indoor-residual-spraying',
     },
     {
       icon: CheckCircle,
       title: 'Herbicide Spraying',
       description: 'Effective weed control solutions for agricultural and residential properties.',
       image: '/images/IMG-20260520-WA0007.jpg',
+      href: '/services/herbicide-spraying',
     },
     {
       icon: Award,
       title: 'Industrial Spraying',
       description: 'Large-scale industrial pest treatment for warehouses and factories.',
-      image: '/images/IMG-20260520-WA0008.jpg',
+      image: '/images/IMG-20260520-WA0014.jpg',
+      href: '/services/industrial-spraying',
     },
     {
       icon: Star,
       title: 'Hygiene Solutions',
       description: 'Commercial sanitation treatments to maintain clean and pest-free environments.',
       image: '/images/IMG-20260520-WA0009.jpg',
+      href: '/services/hygiene-solutions',
     },
     {
       icon: Heart,
       title: 'Bee Removal Services',
       description: 'Safe bee relocation and treatment to keep your premises sting-free.',
       image: '/images/IMG-20260520-WA0010.jpg',
+      href: '/services/bee-removal',
     },
   ];
 
@@ -196,6 +204,7 @@ export default function Home() {
                 title={service.title}
                 description={service.description}
                 image={service.image}
+                href={service.href}
                 delay={index * 0.05}
               />
             ))}

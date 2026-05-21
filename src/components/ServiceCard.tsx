@@ -9,9 +9,10 @@ interface ServiceCardProps {
   description: string;
   delay?: number;
   image: string;
+  href?: string;
 }
 
-export default function ServiceCard({ icon: Icon, title, description, delay = 0, image }: ServiceCardProps) {
+export default function ServiceCard({ icon: Icon, title, description, delay = 0, image, href = '/services' }: ServiceCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -58,7 +59,7 @@ export default function ServiceCard({ icon: Icon, title, description, delay = 0,
           className="mt-5 pt-5 border-t border-white/10 group-hover:border-[#c9a84c]/20 transition-colors"
         >
           <a
-            href="/services"
+            href={href}
             className="inline-flex items-center gap-2 text-[#c9a84c] font-semibold text-sm group-hover:gap-3 transition-all duration-300"
           >
             Learn More

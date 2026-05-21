@@ -3,15 +3,15 @@
 import { MessageCircle, MapPin, Phone, Clock } from 'lucide-react';
 
 export default function Footer() {
-  const services = [
-    'Termite Proofing',
-    'Rodent Control',
-    'Agricultural Fumigation',
-    'Indoor Residual Spraying',
-    'Herbicide Spraying',
-    'Industrial Spraying',
-    'Hygiene Solutions',
-    'Bee Removal Services',
+  const serviceLinks: { name: string; href: string }[] = [
+    { name: 'Termite Proofing', href: '/services/termite-proofing' },
+    { name: 'Rodent Control', href: '/services/rodent-control' },
+    { name: 'Agricultural Fumigation', href: '/services/agricultural-fumigation' },
+    { name: 'Indoor Residual Spraying', href: '/services/indoor-residual-spraying' },
+    { name: 'Herbicide Spraying', href: '/services/herbicide-spraying' },
+    { name: 'Industrial Spraying', href: '/services/industrial-spraying' },
+    { name: 'Hygiene Solutions', href: '/services/hygiene-solutions' },
+    { name: 'Bee Removal Services', href: '/services/bee-removal' },
   ];
 
   return (
@@ -50,10 +50,10 @@ export default function Footer() {
           <div>
             <h4 className="text-[#c9a84c] text-xs font-semibold uppercase tracking-[0.2em] mb-6">Our Services</h4>
             <ul className="space-y-3">
-              {services.map((service) => (
-                <li key={service}>
-                  <a href="/services" className="text-gray-500 hover:text-[#c9a84c] transition-colors text-sm">
-                    {service}
+              {serviceLinks.map((s) => (
+                <li key={s.name}>
+                  <a href={s.href} className="text-gray-500 hover:text-[#c9a84c] transition-colors text-sm">
+                    {s.name}
                   </a>
                 </li>
               ))}

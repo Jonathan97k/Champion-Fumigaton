@@ -15,6 +15,7 @@ export default function Services() {
       description: 'Protect buildings and structures from termite damage with our advanced treatment methods. We use specialized chemicals that create a barrier around your property, preventing termites from entering and destroying wooden structures.',
       features: ['Pre-construction treatment', 'Post-construction treatment', 'Soil treatment', 'Wood treatment', 'Annual maintenance plans'],
       image: '/images/IMG-20260520-WA0003.jpg',
+      href: '/services/termite-proofing',
     },
     {
       icon: Users,
@@ -22,6 +23,7 @@ export default function Services() {
       description: 'Safe elimination and prevention solutions for mice, rats, and other rodents. Our comprehensive approach includes identification, elimination, and prevention to keep your property rodent-free.',
       features: ['Trapping and removal', 'Bait station installation', 'Exclusion services', 'Sanitation recommendations', 'Preventive maintenance'],
       image: '/images/IMG-20260520-WA0004.jpg',
+      href: '/services/rodent-control',
     },
     {
       icon: Heart,
@@ -29,6 +31,7 @@ export default function Services() {
       description: 'Protect stored crops from infestation and spoilage with specialized treatments. We help farmers and storage facilities maintain the quality and safety of their agricultural products.',
       features: ['Grain storage fumigation', 'Warehouse treatment', 'Export certification', 'Quality preservation', 'Compliance with international standards'],
       image: '/images/IMG-20260520-WA0005.jpg',
+      href: '/services/agricultural-fumigation',
     },
     {
       icon: SprayCan,
@@ -36,6 +39,7 @@ export default function Services() {
       description: 'Long-lasting indoor pest prevention for mosquitoes and other flying insects. Our IRS treatments create a protective barrier on walls and surfaces that kills insects on contact.',
       features: ['Mosquito control', 'Fly control', 'Long-lasting protection', 'Safe for indoor use', 'Regular treatment schedules'],
       image: '/images/IMG-20260520-WA0006.jpg',
+      href: '/services/indoor-residual-spraying',
     },
     {
       icon: CheckCircle,
@@ -43,13 +47,15 @@ export default function Services() {
       description: 'Effective weed control solutions for agricultural and residential properties. We use selective herbicides that target unwanted vegetation while preserving your desired plants.',
       features: ['Selective weed control', 'Pre-emergent treatment', 'Post-emergent treatment', 'Vegetation management', 'Environmentally friendly options'],
       image: '/images/IMG-20260520-WA0007.jpg',
+      href: '/services/herbicide-spraying',
     },
     {
       icon: Award,
       title: 'Industrial Spraying',
       description: 'Large-scale industrial pest treatment for warehouses, factories, and commercial facilities. Our industrial solutions are designed to handle complex pest challenges in large spaces.',
       features: ['Warehouse fumigation', 'Factory treatment', 'Food processing facilities', 'Commercial kitchens', 'Custom treatment plans'],
-      image: '/images/IMG-20260520-WA0008.jpg',
+      image: '/images/IMG-20260520-WA0014.jpg',
+      href: '/services/industrial-spraying',
     },
     {
       icon: Star,
@@ -57,6 +63,7 @@ export default function Services() {
       description: 'Commercial sanitation treatments to maintain clean and pest-free environments. Our hygiene services complement our pest control treatments to ensure comprehensive protection.',
       features: ['Deep cleaning', 'Sanitization', 'Disinfection', 'Odor control', 'Preventive treatments'],
       image: '/images/IMG-20260520-WA0009.jpg',
+      href: '/services/hygiene-solutions',
     },
     {
       icon: Bug,
@@ -64,6 +71,7 @@ export default function Services() {
       description: 'Safe bee relocation and treatment to keep your premises sting-free. We prioritize bee conservation while ensuring your safety through humane removal methods.',
       features: ['Humane bee removal', 'Hive relocation', 'Swarm removal', 'Bee-friendly methods', 'Prevention advice'],
       image: '/images/IMG-20260520-WA0010.jpg',
+      href: '/services/bee-removal',
     },
   ];
 
@@ -182,10 +190,10 @@ export default function Services() {
 
                 <div className="bg-gradient-to-r from-[#D62828] to-[#a31e1e] p-6 relative">
                   <a
-                    href="/contact"
+                    href={service.href || '/contact'}
                     className="inline-flex items-center gap-3 text-white font-semibold hover:text-[#F4B400] transition-colors group-hover:gap-4"
                   >
-                    Get a Quote
+                    Learn More
                     <ArrowRight size={20} />
                   </a>
                 </div>
