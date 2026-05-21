@@ -23,8 +23,8 @@ const playfairDisplay = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Champion Fumigation Services | Premium Pest Control Malawi",
-  description: "Industry-leading pest control and fumigation services in Malawi. Certified experts delivering uncompromising protection for homes, businesses, and agricultural assets across Lilongwe, Mzuzu, and Blantyre.",
-  keywords: ["pest control", "fumigation", "Malawi", "Lilongwe", "Mzuzu", "Blantyre", "termite proofing", "rodent control", "agricultural fumigation", "premium pest control"],
+  description: "Industry-leading pest control and fumigation services in Malawi. Certified experts delivering uncompromising protection for homes, businesses, and agricultural assets across Lilongwe and Kanengo.",
+  keywords: ["pest control", "fumigation", "Malawi", "Lilongwe", "Kanengo", "termite proofing", "rodent control", "agricultural fumigation", "premium pest control"],
   authors: [{ name: "Champion Fumigation Services" }],
   icons: {
     icon: '/logo.jpg',

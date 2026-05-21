@@ -7,7 +7,7 @@ import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { motion } from 'framer-motion';
-import { Shield, CheckCircle, Clock, MapPin, Award, Users, Heart, Star, Sparkles, Search, Target, SprayCan, ShieldCheck } from 'lucide-react';
+import { Shield, CheckCircle, Clock, MapPin, Award, Users, Heart, Star, Sparkles, Search, Target, SprayCan, ShieldCheck, Phone, MessageCircle } from 'lucide-react';
 
 export default function Home() {
   const services = [
@@ -15,49 +15,49 @@ export default function Home() {
       icon: Shield,
       title: 'Termite Proofing',
       description: 'Protect buildings and structures from termite damage with our advanced treatment methods.',
-      image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80',
+      image: '/images/IMG-20260520-WA0003.jpg',
     },
     {
       icon: Users,
       title: 'Rodent Control',
       description: 'Safe elimination and prevention solutions for mice, rats, and other rodents.',
-      image: 'https://images.unsplash.com/photo-1563220759-4d0a37a28e1d?w=400&q=80',
+      image: '/images/IMG-20260520-WA0004.jpg',
     },
     {
       icon: Heart,
       title: 'Agricultural Product Fumigation',
       description: 'Protect stored crops from infestation and spoilage with specialized treatments.',
-      image: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&q=80',
+      image: '/images/IMG-20260520-WA0005.jpg',
     },
     {
       icon: Shield,
       title: 'Indoor Residual Spraying (IRS)',
       description: 'Long-lasting indoor pest prevention for mosquitoes and other flying insects.',
-      image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=80',
+      image: '/images/IMG-20260520-WA0006.jpg',
     },
     {
       icon: CheckCircle,
       title: 'Herbicide Spraying',
       description: 'Effective weed control solutions for agricultural and residential properties.',
-      image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&q=80',
+      image: '/images/IMG-20260520-WA0007.jpg',
     },
     {
       icon: Award,
       title: 'Industrial Spraying',
       description: 'Large-scale industrial pest treatment for warehouses and factories.',
-      image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&q=80',
+      image: '/images/IMG-20260520-WA0008.jpg',
     },
     {
       icon: Star,
       title: 'Hygiene Solutions',
       description: 'Commercial sanitation treatments to maintain clean and pest-free environments.',
-      image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&q=80',
+      image: '/images/IMG-20260520-WA0009.jpg',
     },
     {
       icon: Heart,
       title: 'Bee Removal Services',
       description: 'Safe bee relocation and treatment to keep your premises sting-free.',
-      image: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&q=80',
+      image: '/images/IMG-20260520-WA0010.jpg',
     },
   ];
 
@@ -78,12 +78,12 @@ export default function Home() {
     },
     {
       name: 'Mary Phiri',
-      location: 'Blantyre',
+      location: 'Lilongwe',
       text: 'Champion Fumigation saved our warehouse from termite damage. Amazing work!',
     },
     {
       name: 'Peter Mwale',
-      location: 'Mzuzu',
+      location: 'Kanengo',
       text: 'Very reliable team for agricultural fumigation. Our crops are now protected.',
     },
   ];
@@ -270,10 +270,10 @@ export default function Home() {
               <div className="glass rounded-3xl p-10 relative">
                 <div className="grid grid-cols-2 gap-6">
                   {[
-                    { src: 'https://images.unsplash.com/photo-1591543620767-582b2e760425?w=400&q=80', alt: 'Termite control' },
-                    { src: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&q=80', alt: 'Bee removal' },
-                    { src: 'https://images.unsplash.com/photo-1548550041-340695cc6952?w=400&q=80', alt: 'Rodent control' },
-                    { src: 'https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?w=400&q=80', alt: 'Mosquito control' },
+                    { src: '/images/IMG-20260520-WA0011.jpg', alt: 'Termite control' },
+                    { src: '/images/IMG-20260520-WA0014.jpg', alt: 'Bee removal' },
+                    { src: '/images/IMG-20260520-WA0015.jpg', alt: 'Rodent control' },
+                    { src: '/images/IMG-20260520-WA0016.jpg', alt: 'Mosquito control' },
                   ].map((item, index) => (
                     <motion.div
                       key={index}
@@ -360,12 +360,12 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-gray-50 relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-[#0a0a0a] relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `
               linear-gradient(rgba(201, 168, 76, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(214, 40, 40, 0.1) 1px, transparent 1px)
+              linear-gradient(90deg, rgba(201, 168, 76, 0.1) 1px, transparent 1px)
             `,
             backgroundSize: '80px 80px'
           }}></div>
@@ -379,51 +379,58 @@ export default function Home() {
             transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="text-center mb-20"
           >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+            <motion.span
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-lg border border-gray-100"
+              className="text-[#c9a84c] text-sm font-semibold tracking-[0.2em] uppercase"
             >
-              <Sparkles className="text-[#F4B400]" size={16} />
-              <span className="text-gray-900 text-sm font-semibold tracking-wide uppercase">
-                Testimonials
-              </span>
-            </motion.div>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mt-8 mb-6 font-serif">
-              What Our <span className="gradient-text">Clients</span> Say
+              Testimonials
+            </motion.span>
+            <h2 className="text-5xl md:text-6xl font-bold text-white mt-6 mb-4 font-serif">
+              What Our <span className="text-[#c9a84c]">Clients</span> Say
             </h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ delay: index * 0.1, duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="glass rounded-3xl p-10 hover:shadow-2xl transition-all duration-500 group"
-              >
-                <div className="flex gap-1 mb-6">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 fill-[#F4B400] text-[#F4B400]" />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-8 text-lg font-light italic leading-relaxed">"{testimonial.text}"</p>
-                <div className="pt-6 border-t border-gray-200">
-                  <h4 className="font-bold text-gray-900 text-xl mb-1 font-serif">{testimonial.name}</h4>
-                  <p className="text-gray-500 text-sm uppercase tracking-wider">{testimonial.location}</p>
-                </div>
-              </motion.div>
-            ))}
+            {testimonials.map((testimonial, index) => {
+              const initials = testimonial.name.split(' ').map(n => n[0]).join('');
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ delay: index * 0.1, duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  whileHover={{ y: -4 }}
+                  className="bg-[#161b22] border border-[rgba(255,255,255,0.07)] rounded-xl p-8 hover:border-[#c9a84c]/40 hover:shadow-lg hover:shadow-[#c9a84c]/5 transition-all duration-300 relative"
+                >
+                  <div className="text-[#c9a84c] text-6xl font-serif leading-none mb-2 opacity-40">&quot;</div>
+                  <div className="flex gap-1 mb-5">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-[#c9a84c] text-[#c9a84c]" />
+                    ))}
+                  </div>
+                  <p className="text-[#d8d3ca] mb-8 text-base font-light italic leading-relaxed">&ldquo;{testimonial.text}&rdquo;</p>
+                  <div className="flex items-center gap-4 pt-6 border-t border-white/10">
+                    <div className="w-10 h-10 bg-[#c9a84c]/20 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-[#c9a84c] font-bold text-sm">{initials}</span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-base">{testimonial.name}</h4>
+                      <p className="text-[#c9a84c] text-xs uppercase tracking-wider">{testimonial.location}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#c9a84c]/10 to-[#F4B400]/10 rounded-full blur-3xl opacity-50"></div>
+      <section className="py-16 md:py-24 lg:py-32 bg-[#111418] relative overflow-hidden">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#c9a84c] rounded-full blur-[200px] opacity-5"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-20">
@@ -433,55 +440,62 @@ export default function Home() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+              <motion.span
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="inline-flex items-center gap-3 glass px-6 py-3 rounded-full"
+                className="text-[#c9a84c] text-sm font-semibold tracking-[0.2em] uppercase"
               >
-                <Sparkles className="text-[#F4B400]" size={16} />
-                <span className="text-gray-900 text-sm font-semibold tracking-wide uppercase">
-                  Get In Touch
-                </span>
-              </motion.div>
-              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mt-8 mb-6 font-serif">
-                Request a <span className="gradient-text">Free</span> Quote
+                Get In Touch
+              </motion.span>
+              <h2 className="text-5xl md:text-6xl font-bold text-white mt-6 mb-4 font-serif">
+                Request a <span className="text-[#c9a84c]">Free</span> Quote
               </h2>
-              <p className="text-xl text-gray-600 mb-12 font-light leading-relaxed">
+              <p className="text-lg text-gray-400 mb-10 font-light leading-relaxed">
                 Contact us today and our team will assess your pest problem and provide an affordable solution fast.
               </p>
 
-              <div className="space-y-8">
-                <div className="flex items-center gap-6 group">
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#c9a84c] to-[#b8973f] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#c9a84c]/30">
-                    <Shield className="text-white" size={22} />
+              <div className="space-y-4 mb-8">
+                <div className="bg-[#1e2530] rounded-xl p-5 flex items-center gap-5">
+                  <div className="w-12 h-12 bg-[#c9a84c]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="text-[#c9a84c]" size={22} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg md:text-xl mb-1">Call Us</h4>
-                    <a href="tel:+265991380581" className="text-gray-600 hover:text-[#c9a84c] transition-colors text-base md:text-lg">
+                    <h4 className="text-white font-semibold text-sm">Call Us</h4>
+                    <a href="tel:+265991380581" className="text-gray-400 hover:text-[#c9a84c] transition-colors text-base">
                       +265 991 380 581
                     </a>
                   </div>
                 </div>
-                <div className="flex items-center gap-6 group">
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#c9a84c] to-[#b8973f] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#c9a84c]/30">
-                    <MapPin className="text-white" size={22} />
+                <div className="bg-[#1e2530] rounded-xl p-5 flex items-center gap-5">
+                  <div className="w-12 h-12 bg-[#c9a84c]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MapPin className="text-[#c9a84c]" size={22} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg md:text-xl mb-1">Locations</h4>
-                    <p className="text-gray-600 text-base md:text-lg">Lilongwe · Mzuzu · Blantyre</p>
+                    <h4 className="text-white font-semibold text-sm">Locations</h4>
+                    <p className="text-gray-400 text-base">Lilongwe · Kanengo</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-6 group">
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#c9a84c] to-[#b8973f] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#c9a84c]/30">
-                    <Clock className="text-white" size={22} />
+                <div className="bg-[#1e2530] rounded-xl p-5 flex items-center gap-5">
+                  <div className="w-12 h-12 bg-[#c9a84c]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Clock className="text-[#c9a84c]" size={22} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg md:text-xl mb-1">Hours</h4>
-                    <p className="text-gray-600 text-base md:text-lg">Mon – Sat: 7am – 6pm</p>
+                    <h4 className="text-white font-semibold text-sm">Hours</h4>
+                    <p className="text-gray-400 text-base">Mon – Sat: 7am – 6pm</p>
                   </div>
                 </div>
               </div>
+
+              <a
+                href="https://wa.me/265991380581"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#20bd5a] hover:shadow-lg hover:shadow-[#25D366]/25 transition-all duration-300"
+              >
+                <MessageCircle size={20} />
+                Chat on WhatsApp
+              </a>
             </motion.div>
 
             <ContactForm />

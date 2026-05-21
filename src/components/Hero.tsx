@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+          src="/images/IMG-20260520-WA0000.jpg"
           alt="Professional exterminator in protective gear"
           className="w-full h-full object-cover"
         />

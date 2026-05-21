@@ -14,56 +14,56 @@ export default function Services() {
       title: 'Termite Proofing',
       description: 'Protect buildings and structures from termite damage with our advanced treatment methods. We use specialized chemicals that create a barrier around your property, preventing termites from entering and destroying wooden structures.',
       features: ['Pre-construction treatment', 'Post-construction treatment', 'Soil treatment', 'Wood treatment', 'Annual maintenance plans'],
-      image: 'https://images.unsplash.com/photo-1591543620767-582b2e760425?w=600&q=80',
+      image: '/images/IMG-20260520-WA0003.jpg',
     },
     {
       icon: Users,
       title: 'Rodent Control',
       description: 'Safe elimination and prevention solutions for mice, rats, and other rodents. Our comprehensive approach includes identification, elimination, and prevention to keep your property rodent-free.',
       features: ['Trapping and removal', 'Bait station installation', 'Exclusion services', 'Sanitation recommendations', 'Preventive maintenance'],
-      image: 'https://images.unsplash.com/photo-1548550041-34068e3a56b9?w=600&q=80',
+      image: '/images/IMG-20260520-WA0004.jpg',
     },
     {
       icon: Heart,
       title: 'Agricultural Product Fumigation',
       description: 'Protect stored crops from infestation and spoilage with specialized treatments. We help farmers and storage facilities maintain the quality and safety of their agricultural products.',
       features: ['Grain storage fumigation', 'Warehouse treatment', 'Export certification', 'Quality preservation', 'Compliance with international standards'],
-      image: 'https://images.unsplash.com/photo-1574943320219-553eb213f52d?w=600&q=80',
+      image: '/images/IMG-20260520-WA0005.jpg',
     },
     {
       icon: SprayCan,
       title: 'Indoor Residual Spraying (IRS)',
       description: 'Long-lasting indoor pest prevention for mosquitoes and other flying insects. Our IRS treatments create a protective barrier on walls and surfaces that kills insects on contact.',
       features: ['Mosquito control', 'Fly control', 'Long-lasting protection', 'Safe for indoor use', 'Regular treatment schedules'],
-      image: 'https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?w=600&q=80',
+      image: '/images/IMG-20260520-WA0006.jpg',
     },
     {
       icon: CheckCircle,
       title: 'Herbicide Spraying',
       description: 'Effective weed control solutions for agricultural and residential properties. We use selective herbicides that target unwanted vegetation while preserving your desired plants.',
       features: ['Selective weed control', 'Pre-emergent treatment', 'Post-emergent treatment', 'Vegetation management', 'Environmentally friendly options'],
-      image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&q=80',
+      image: '/images/IMG-20260520-WA0007.jpg',
     },
     {
       icon: Award,
       title: 'Industrial Spraying',
       description: 'Large-scale industrial pest treatment for warehouses, factories, and commercial facilities. Our industrial solutions are designed to handle complex pest challenges in large spaces.',
       features: ['Warehouse fumigation', 'Factory treatment', 'Food processing facilities', 'Commercial kitchens', 'Custom treatment plans'],
-      image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=80',
+      image: '/images/IMG-20260520-WA0008.jpg',
     },
     {
       icon: Star,
       title: 'Hygiene Solutions',
       description: 'Commercial sanitation treatments to maintain clean and pest-free environments. Our hygiene services complement our pest control treatments to ensure comprehensive protection.',
       features: ['Deep cleaning', 'Sanitization', 'Disinfection', 'Odor control', 'Preventive treatments'],
-      image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80',
+      image: '/images/IMG-20260520-WA0009.jpg',
     },
     {
       icon: Bug,
       title: 'Bee Removal Services',
       description: 'Safe bee relocation and treatment to keep your premises sting-free. We prioritize bee conservation while ensuring your safety through humane removal methods.',
       features: ['Humane bee removal', 'Hive relocation', 'Swarm removal', 'Bee-friendly methods', 'Prevention advice'],
-      image: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=600&q=80',
+      image: '/images/IMG-20260520-WA0010.jpg',
     },
   ];
 
@@ -76,7 +76,7 @@ export default function Services() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1585421514738-01798e348b14?w=1920&q=80"
+            src="/images/IMG-20260520-WA0020.jpg"
             alt="Professional fumigation services"
             className="w-full h-full object-cover"
           />

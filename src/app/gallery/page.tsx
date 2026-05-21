@@ -15,56 +15,56 @@ export default function Gallery() {
       id: 1,
       title: 'Warehouse Fumigation',
       category: 'Industrial',
-      image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80',
+      image: '/images/IMG-20260520-WA0011.jpg',
       color: 'from-blue-500 to-blue-600',
     },
     {
       id: 2,
       title: 'Agricultural Fumigation',
       category: 'Agricultural',
-      image: 'https://images.unsplash.com/photo-1574943320219-553eb213f52d?w=800&q=80',
+      image: '/images/IMG-20260520-WA0014.jpg',
       color: 'from-green-500 to-green-600',
     },
     {
       id: 3,
       title: 'Termite Treatment',
       category: 'Residential',
-      image: 'https://images.unsplash.com/photo-1591543620767-582b2e760425?w=800&q=80',
+      image: '/images/IMG-20260520-WA0015.jpg',
       color: 'from-orange-500 to-orange-600',
     },
     {
       id: 4,
       title: 'Pest Control Spraying',
       category: 'Commercial',
-      image: 'https://images.unsplash.com/photo-1585421514738-01798e348b14?w=800&q=80',
+      image: '/images/IMG-20260520-WA0016.jpg',
       color: 'from-red-500 to-red-600',
     },
     {
       id: 5,
       title: 'Protective Team',
       category: 'Team',
-      image: 'https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=800&q=80',
+      image: '/images/IMG-20260520-WA0017.jpg',
       color: 'from-purple-500 to-purple-600',
     },
     {
       id: 6,
       title: 'Equipment Setup',
       category: 'Equipment',
-      image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80',
+      image: '/images/IMG-20260520-WA0018.jpg',
       color: 'from-gray-500 to-gray-600',
     },
     {
       id: 7,
       title: 'Safety Protocols',
       category: 'Safety',
-      image: 'https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?w=800&q=80',
+      image: '/images/IMG-20260520-WA0019.jpg',
       color: 'from-yellow-500 to-yellow-600',
     },
     {
       id: 8,
       title: 'After Treatment',
       category: 'Results',
-      image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80',
+      image: '/images/IMG-20260520-WA0021.jpg',
       color: 'from-teal-500 to-teal-600',
     },
   ];
@@ -78,7 +78,7 @@ export default function Gallery() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1920&q=80"
+            src="/images/IMG-20260520-WA0022.jpg"
             alt="Fumigation work gallery"
             className="w-full h-full object-cover"
           />

@@ -32,7 +32,7 @@ export default function About() {
 
   const stats = [
     { value: '8+', label: 'Services Offered' },
-    { value: '3', label: 'Cities Covered' },
+    { value: '2', label: 'Cities Covered' },
     { value: '100%', label: 'Safe Methods' },
     { value: '24/7', label: 'Available' },
   ];
@@ -52,7 +52,7 @@ export default function About() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=1920&q=80"
+            src="/images/IMG-20260520-WA0018.jpg"
             alt="About Champion Fumigation"
             className="w-full h-full object-cover"
           />
@@ -163,7 +163,7 @@ export default function About() {
                 Champion Fumigation Services was founded with a simple mission: to provide Malawi with world-class pest control solutions that are safe, effective, and affordable.
               </p>
               <p className="text-lg text-gray-600 font-light leading-relaxed mb-8">
-                Over the years, we've grown from a small local operation to a trusted industry leader serving clients across Lilongwe, Mzuzu, and Blantyre. Our commitment to quality, safety, and customer satisfaction has earned us the trust of homeowners, businesses, and agricultural enterprises throughout the country.
+                Over the years, we've grown from a small local operation to a trusted industry leader serving clients across Lilongwe and Kanengo. Our commitment to quality, safety, and customer satisfaction has earned us the trust of homeowners, businesses, and agricultural enterprises throughout the country.
               </p>
               <p className="text-lg text-gray-600 font-light leading-relaxed">
                 We believe that every client deserves personalized attention and tailored solutions. That's why we invest in ongoing training for our technicians, stay updated with the latest industry advancements, and maintain the highest standards of service excellence.
@@ -179,7 +179,7 @@ export default function About() {
             >
               <div className="glass rounded-3xl p-6 md:p-10 relative overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80"
+                  src="/images/IMG-20260520-WA0019.jpg"
                   alt="Professional pest control team"
                   className="w-full aspect-square object-cover rounded-2xl"
                 />
