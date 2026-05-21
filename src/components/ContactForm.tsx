@@ -37,7 +37,7 @@ export default function ContactForm() {
       className="glass rounded-3xl p-6 md:p-10 shadow-2xl space-y-8 relative overflow-hidden"
     >
       {/* Decorative Gradient */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#D62828]/20 to-[#F4B400]/20 rounded-full blur-3xl opacity-50"></div>
+      <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#c9a84c]/20 to-[#F4B400]/20 rounded-full blur-3xl opacity-50"></div>
 
       <div className="relative">
         <h3 className="text-3xl font-bold text-gray-900 mb-2 font-serif">
@@ -60,7 +60,7 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             placeholder="John Banda"
-            className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:border-[#D62828] focus:ring-2 focus:ring-[#D62828]/20 focus:outline-none transition-all duration-300"
+            className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 focus:outline-none transition-all duration-300"
           />
         </div>
 
@@ -75,7 +75,7 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             placeholder="+265 xxx xxx xxx"
-            className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:border-[#D62828] focus:ring-2 focus:ring-[#D62828]/20 focus:outline-none transition-all duration-300"
+            className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 focus:outline-none transition-all duration-300"
           />
         </div>
       </div>
@@ -89,7 +89,7 @@ export default function ContactForm() {
           value={formData.location}
           onChange={handleChange}
           required
-          className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:border-[#D62828] focus:ring-2 focus:ring-[#D62828]/20 focus:outline-none transition-all duration-300 appearance-none cursor-pointer"
+          className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 focus:outline-none transition-all duration-300 appearance-none cursor-pointer"
         >
           <option value="">Select your city...</option>
           <option value="Lilongwe">Lilongwe</option>
@@ -108,7 +108,7 @@ export default function ContactForm() {
           value={formData.service}
           onChange={handleChange}
           required
-          className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:border-[#D62828] focus:ring-2 focus:ring-[#D62828]/20 focus:outline-none transition-all duration-300 appearance-none cursor-pointer"
+          className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 focus:outline-none transition-all duration-300 appearance-none cursor-pointer"
         >
           <option value="">Select a service...</option>
           <option value="Termite Proofing">Termite Proofing</option>
@@ -133,7 +133,7 @@ export default function ContactForm() {
           required
           placeholder="Describe your pest problem or any additional details..."
           rows={4}
-          className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:border-[#D62828] focus:ring-2 focus:ring-[#D62828]/20 focus:outline-none transition-all duration-300 resize-none"
+          className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 focus:outline-none transition-all duration-300 resize-none"
         />
       </div>
 
@@ -141,7 +141,7 @@ export default function ContactForm() {
         type="submit"
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
-        className="group relative w-full bg-gradient-to-r from-[#D62828] to-[#a31e1e] text-white py-5 rounded-xl font-semibold hover:shadow-2xl hover:shadow-[#D62828]/30 transition-all duration-300 flex items-center justify-center gap-3"
+        className="group relative w-full bg-[#c9a84c] text-black py-5 rounded-xl font-semibold hover:bg-[#b8973f] hover:shadow-2xl hover:shadow-[#c9a84c]/30 transition-all duration-300 flex items-center justify-center gap-3"
       >
         <span>Send Request</span>
         <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />

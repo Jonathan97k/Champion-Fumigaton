@@ -59,12 +59,12 @@ export default function Navbar() {
                   whileHover={{ scale: 1.05 }}
                 >
                   {link.name}
-                  <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-to-r from-[#D62828] to-[#F4B400] group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#c9a84c] group-hover:w-full transition-all duration-300"></span>
                 </motion.a>
               ))}
               <motion.a
                 href="/contact"
-                className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-[#D62828] to-[#a31e1e] text-white px-8 py-4 rounded-xl font-semibold hover:shadow-2xl hover:shadow-[#D62828]/30 transition-all duration-300"
+                className="group relative inline-flex items-center gap-3 bg-[#c9a84c] text-black px-8 py-4 rounded-xl font-semibold hover:bg-[#b8973f] hover:shadow-2xl hover:shadow-[#c9a84c]/30 transition-all duration-300"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -103,7 +103,7 @@ export default function Navbar() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    className="text-xl font-bold text-gray-800 hover:text-[#D62828] transition-colors uppercase tracking-wider"
+                    className="text-xl font-bold text-gray-800 hover:text-[#c9a84c] transition-colors uppercase tracking-wider"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.name}
@@ -114,7 +114,7 @@ export default function Navbar() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.5 }}
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#D62828] to-[#a31e1e] text-white px-8 py-4 rounded-xl font-semibold"
+                  className="inline-flex items-center justify-center gap-3 bg-[#c9a84c] text-black px-8 py-4 rounded-xl font-semibold hover:bg-[#b8973f]"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <Phone size={20} />

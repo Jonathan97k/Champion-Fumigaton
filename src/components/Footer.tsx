@@ -19,7 +19,7 @@ export default function Footer() {
       {/* Background Gradient */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a]"></div>
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#D62828] rounded-full blur-[200px] opacity-10"></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#c9a84c] rounded-full blur-[200px] opacity-10"></div>
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
       </div>
 
@@ -56,7 +56,7 @@ export default function Footer() {
               {services.map((service) => (
                 <li key={service}>
                   <a href="/services" className="text-gray-400 hover:text-white transition-colors text-sm group flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 bg-[#D62828] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    <span className="w-1.5 h-1.5 bg-[#c9a84c] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     {service}
                   </a>
                 </li>
@@ -70,31 +70,31 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a href="/" className="text-gray-400 hover:text-white transition-colors text-sm group flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-[#D62828] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  <span className="w-1.5 h-1.5 bg-[#c9a84c] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Home
                 </a>
               </li>
               <li>
                 <a href="/about" className="text-gray-400 hover:text-white transition-colors text-sm group flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-[#D62828] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  <span className="w-1.5 h-1.5 bg-[#c9a84c] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   About Us
                 </a>
               </li>
               <li>
                 <a href="/services" className="text-gray-400 hover:text-white transition-colors text-sm group flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-[#D62828] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  <span className="w-1.5 h-1.5 bg-[#c9a84c] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Services
                 </a>
               </li>
               <li>
                 <a href="/gallery" className="text-gray-400 hover:text-white transition-colors text-sm group flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-[#D62828] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  <span className="w-1.5 h-1.5 bg-[#c9a84c] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Gallery
                 </a>
               </li>
               <li>
                 <a href="/contact" className="text-gray-400 hover:text-white transition-colors text-sm group flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-[#D62828] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  <span className="w-1.5 h-1.5 bg-[#c9a84c] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Contact Us
                 </a>
               </li>
@@ -106,19 +106,19 @@ export default function Footer() {
             <h4 className="text-lg font-bold mb-8 text-[#F4B400] uppercase tracking-wider">Contact Us</h4>
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-[#D62828]/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Phone className="text-[#D62828]" size={20} />
+                <div className="w-12 h-12 bg-[#c9a84c]/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Phone className="text-[#c9a84c]" size={20} />
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm mb-1">Phone</p>
-                  <a href="tel:+265991380581" className="text-white font-semibold hover:text-[#D62828] transition-colors">
+                  <a href="tel:+265991380581" className="text-white font-semibold hover:text-[#c9a84c] transition-colors">
                     +265 991 380 581
                   </a>
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-[#D62828]/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <MapPin className="text-[#D62828]" size={20} />
+                <div className="w-12 h-12 bg-[#c9a84c]/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <MapPin className="text-[#c9a84c]" size={20} />
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm mb-1">Locations</p>
@@ -126,8 +126,8 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-[#D62828]/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Clock className="text-[#D62828]" size={20} />
+                <div className="w-12 h-12 bg-[#c9a84c]/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Clock className="text-[#c9a84c]" size={20} />
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm mb-1">Hours</p>

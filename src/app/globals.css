@@ -4,7 +4,7 @@
 :root {
   --background: #ffffff;
   --foreground: #0a0a0a;
-  --primary-red: #D62828;
+  --primary-gold: #c9a84c;
   --secondary-gold: #F4B400;
   --accent-green: #2E7D32;
   --dark-bg: #0a0a0a;
@@ -18,7 +18,7 @@
   --color-foreground: var(--foreground);
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Playfair Display', serif;
-  --color-primary: #D62828;
+  --color-primary: #c9a84c;
   --color-gold: #F4B400;
   --color-green: #2E7D32;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #D62828 0%, #F4B400 100%);
+  background: linear-gradient(135deg, #c9a84c 0%, #F4B400 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

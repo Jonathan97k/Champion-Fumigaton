@@ -15,41 +15,49 @@ export default function Home() {
       icon: Shield,
       title: 'Termite Proofing',
       description: 'Protect buildings and structures from termite damage with our advanced treatment methods.',
+      image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80',
     },
     {
       icon: Users,
       title: 'Rodent Control',
       description: 'Safe elimination and prevention solutions for mice, rats, and other rodents.',
+      image: 'https://images.unsplash.com/photo-1563220759-4d0a37a28e1d?w=400&q=80',
     },
     {
       icon: Heart,
       title: 'Agricultural Product Fumigation',
       description: 'Protect stored crops from infestation and spoilage with specialized treatments.',
+      image: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&q=80',
     },
     {
       icon: Shield,
       title: 'Indoor Residual Spraying (IRS)',
       description: 'Long-lasting indoor pest prevention for mosquitoes and other flying insects.',
+      image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=80',
     },
     {
       icon: CheckCircle,
       title: 'Herbicide Spraying',
       description: 'Effective weed control solutions for agricultural and residential properties.',
+      image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&q=80',
     },
     {
       icon: Award,
       title: 'Industrial Spraying',
       description: 'Large-scale industrial pest treatment for warehouses and factories.',
+      image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&q=80',
     },
     {
       icon: Star,
       title: 'Hygiene Solutions',
       description: 'Commercial sanitation treatments to maintain clean and pest-free environments.',
+      image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&q=80',
     },
     {
       icon: Heart,
       title: 'Bee Removal Services',
       description: 'Safe bee relocation and treatment to keep your premises sting-free.',
+      image: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&q=80',
     },
   ];
 
@@ -123,7 +131,7 @@ export default function Home() {
             </div>
             <div className="hidden md:block w-px h-6 bg-white/20"></div>
             <div className="flex items-center gap-2 text-white/80">
-              <span className="text-red-400 text-lg">⚡</span>
+              <span className="text-[#c9a84c] text-lg">⚡</span>
               <span className="text-xs md:text-sm font-semibold uppercase tracking-wider">24/7 Emergency Response</span>
             </div>
             <div className="hidden md:block w-px h-6 bg-white/20"></div>
@@ -141,13 +149,13 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-gray-50 relative overflow-hidden">
+      <section id="services" className="py-16 md:py-24 lg:py-32 bg-[#0a0a0a] relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `
-              linear-gradient(rgba(214, 40, 40, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(214, 40, 40, 0.1) 1px, transparent 1px)
+              linear-gradient(rgba(201, 168, 76, 0.1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(201, 168, 76, 0.1) 1px, transparent 1px)
             `,
             backgroundSize: '80px 80px'
           }}></div>
@@ -165,28 +173,29 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-lg border border-gray-100"
+              className="inline-flex items-center gap-3 bg-[#1e2530] px-6 py-3 rounded-full shadow-lg border border-white/10"
             >
-              <Sparkles className="text-[#F4B400]" size={16} />
-              <span className="text-gray-900 text-sm font-semibold tracking-wide uppercase">
+              <Sparkles className="text-[#c9a84c]" size={16} />
+              <span className="text-white text-sm font-semibold tracking-wide uppercase">
                 Our Services
               </span>
             </motion.div>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mt-8 mb-6 font-serif">
-              Premium <span className="gradient-text">Fumigation</span> Solutions
+            <h2 className="text-5xl md:text-6xl font-bold text-white mt-8 mb-6 font-serif">
+              Premium <span className="text-[#c9a84c]">Fumigation</span> Solutions
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
+            <p className="text-xl text-[#8b9098] max-w-3xl mx-auto font-light">
               Comprehensive pest control services tailored for homes, businesses, and industrial facilities across Malawi.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
               <ServiceCard
                 key={service.title}
                 icon={service.icon}
                 title={service.title}
                 description={service.description}
+                image={service.image}
                 delay={index * 0.05}
               />
             ))}
@@ -199,7 +208,7 @@ export default function Home() {
         {/* Background Gradient */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a]"></div>
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#D62828] rounded-full blur-[200px] opacity-10"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#c9a84c] rounded-full blur-[200px] opacity-10"></div>
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
         </div>
 
@@ -239,7 +248,7 @@ export default function Home() {
                     transition={{ delay: index * 0.1 }}
                     className="flex items-start gap-4 group"
                   >
-                    <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#c9a84c] to-[#b8973f] rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                       <item.icon className="text-white" size={22} />
                     </div>
                     <div>
@@ -294,7 +303,7 @@ export default function Home() {
       <section className="py-16 md:py-24 lg:py-32 bg-[#0a0a0a] relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a]"></div>
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#D62828] rounded-full blur-[200px] opacity-10"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#c9a84c] rounded-full blur-[200px] opacity-10"></div>
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
         </div>
 
@@ -332,13 +341,13 @@ export default function Home() {
                 transition={{ delay: index * 0.1 }}
                 className="glass rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 group relative"
               >
-                <div className="absolute top-4 right-4 w-8 h-8 bg-[#D62828] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                <div className="absolute top-4 right-4 w-8 h-8 bg-[#c9a84c] rounded-full flex items-center justify-center text-white font-bold text-sm">
                   {index + 1}
                 </div>
                 <motion.div
                   whileHover={{ rotate: 360, scale: 1.1 }}
                   transition={{ duration: 0.6 }}
-                  className="w-16 h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center mb-6 group-hover:shadow-2xl group-hover:shadow-[#D62828]/30 transition-all"
+                  className="w-16 h-16 bg-gradient-to-br from-[#c9a84c] to-[#b8973f] rounded-2xl flex items-center justify-center mb-6 group-hover:shadow-2xl group-hover:shadow-[#c9a84c]/30 transition-all"
                 >
                   <step.icon className="text-white" size={32} />
                 </motion.div>
@@ -355,7 +364,7 @@ export default function Home() {
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `
-              linear-gradient(rgba(214, 40, 40, 0.1) 1px, transparent 1px),
+              linear-gradient(rgba(201, 168, 76, 0.1) 1px, transparent 1px),
               linear-gradient(90deg, rgba(214, 40, 40, 0.1) 1px, transparent 1px)
             `,
             backgroundSize: '80px 80px'
@@ -414,7 +423,7 @@ export default function Home() {
 
       {/* Contact Section */}
       <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#D62828]/10 to-[#F4B400]/10 rounded-full blur-3xl opacity-50"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#c9a84c]/10 to-[#F4B400]/10 rounded-full blur-3xl opacity-50"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-20">
@@ -444,18 +453,18 @@ export default function Home() {
 
               <div className="space-y-8">
                 <div className="flex items-center gap-6 group">
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#D62828]/30">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#c9a84c] to-[#b8973f] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#c9a84c]/30">
                     <Shield className="text-white" size={22} />
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 text-lg md:text-xl mb-1">Call Us</h4>
-                    <a href="tel:+265991380581" className="text-gray-600 hover:text-[#D62828] transition-colors text-base md:text-lg">
+                    <a href="tel:+265991380581" className="text-gray-600 hover:text-[#c9a84c] transition-colors text-base md:text-lg">
                       +265 991 380 581
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-6 group">
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#D62828]/30">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#c9a84c] to-[#b8973f] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#c9a84c]/30">
                     <MapPin className="text-white" size={22} />
                   </div>
                   <div>
@@ -464,7 +473,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-center gap-6 group">
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#D62828]/30">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#c9a84c] to-[#b8973f] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#c9a84c]/30">
                     <Clock className="text-white" size={22} />
                   </div>
                   <div>

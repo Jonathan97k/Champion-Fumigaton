@@ -1,24 +1,24 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Phone, Shield, Sparkles } from 'lucide-react';
+import { ArrowRight, Phone, Sparkles, ChevronDown } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] bg-[#0a0a0a] flex items-center overflow-hidden">
+    <section className="relative min-h-screen bg-[#0a0a0a] flex items-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1920&q=80"
-          alt="Professional pest control"
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+          alt="Professional exterminator in protective gear"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a]/90 via-[#1a1a1a]/85 to-[#0a0a0a]/90"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
       </div>
 
       {/* Background Gradient */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#D62828] rounded-full blur-[200px] opacity-10"></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#c9a84c] rounded-full blur-[200px] opacity-10"></div>
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F4B400] rounded-full blur-[200px] opacity-10"></div>
       </div>
 
@@ -26,8 +26,8 @@ export default function Hero() {
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
           backgroundImage: `
-            linear-gradient(rgba(214, 40, 40, 0.1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(214, 40, 40, 0.1) 1px, transparent 1px)
+            linear-gradient(rgba(201, 168, 76, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(201, 168, 76, 0.1) 1px, transparent 1px)
           `,
           backgroundSize: '60px 60px'
         }}></div>
@@ -51,9 +51,9 @@ export default function Hero() {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="inline-flex items-center gap-3 glass px-6 py-3 rounded-full"
             >
-              <Sparkles className="text-[#F4B400]" size={16} />
+              <Sparkles className="text-[#c9a84c]" size={16} />
               <span className="text-white/90 text-sm font-semibold tracking-wide">
-                Premium Pest Control Services
+                Premium Fumigation Solutions
               </span>
             </motion.div>
 
@@ -61,12 +61,12 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight"
             >
-              Protect What{' '}
-              <span className="gradient-text">Matters</span>
+              <span className="text-white">Premium</span>{' '}
+              <span className="text-[#c9a84c]">Fumigation</span>
               <br />
-              Most
+              <span className="text-white">Solutions</span>
             </motion.h1>
 
             <motion.p
@@ -86,7 +86,7 @@ export default function Hero() {
             >
               <motion.a
                 href="/contact"
-                className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#D62828] to-[#a31e1e] text-white px-10 py-5 rounded-2xl font-semibold text-lg hover:shadow-2xl hover:shadow-[#D62828]/25 transition-all duration-300"
+                className="group relative inline-flex items-center justify-center gap-3 bg-[#c9a84c] text-black px-10 py-5 rounded-2xl font-semibold text-lg hover:bg-[#b8973f] hover:shadow-2xl hover:shadow-[#c9a84c]/25 transition-all duration-300"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -136,7 +136,7 @@ export default function Hero() {
           >
             <div className="relative">
               {/* Decorative Elements */}
-              <div className="absolute -top-20 -right-20 w-80 h-80 bg-gradient-to-br from-[#D62828] to-[#a31e1e] rounded-full blur-[120px] opacity-30 animate-pulse"></div>
+              <div className="absolute -top-20 -right-20 w-80 h-80 bg-gradient-to-br from-[#c9a84c] to-[#b8973f] rounded-full blur-[120px] opacity-30 animate-pulse"></div>
               <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-gradient-to-br from-[#F4B400] to-[#d4a000] rounded-full blur-[120px] opacity-30 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
               
               {/* Main Card */}
@@ -147,7 +147,7 @@ export default function Hero() {
                 className="relative glass rounded-3xl p-10 shadow-2xl"
               >
                 <div className="aspect-[4/3] bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#D62828]/10 to-[#F4B400]/10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#c9a84c]/10 to-[#F4B400]/10"></div>
 
                   <motion.img
                     src="/logo.jpg"
@@ -170,18 +170,9 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 cursor-pointer"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer"
       >
-        <motion.div
-          animate={{ y: [0, 12, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="flex flex-col items-center gap-3"
-        >
-          <span className="text-white/50 text-xs uppercase tracking-widest">Scroll</span>
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-3 bg-gradient-to-b from-[#F4B400] to-[#D62828] rounded-full"></div>
-          </div>
-        </motion.div>
+        <ChevronDown className="text-[#c9a84c] opacity-70 animate-bounce" size={28} />
       </motion.a>
     </section>
   );
