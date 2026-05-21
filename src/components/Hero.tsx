@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRight, Phone, Sparkles, ChevronDown } from 'lucide-react';
 
@@ -144,18 +145,16 @@ export default function Hero() {
                 initial={{ rotateY: 45, rotateX: 15 }}
                 animate={{ rotateY: 0, rotateX: 0 }}
                 transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="relative glass rounded-3xl p-10 shadow-2xl"
+                className="relative glass rounded-3xl overflow-hidden shadow-2xl"
               >
-                <div className="aspect-[4/3] bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#c9a84c]/10 to-[#F4B400]/10"></div>
-
-                  <motion.img
-                    src="/logo.jpg"
-                    alt="Champion Fumigation"
-                    className="relative z-10 max-h-48 w-auto object-contain rounded-2xl"
-                    animate={{ scale: [1, 1.03, 1] }}
-                    transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <Image
+                    src="/Booster.jpg"
+                    alt="Champion Fumigation Professional Services"
+                    fill
+                    className="object-cover object-center"
                   />
+                  <div className="absolute inset-0 bg-black/15"></div>
                 </div>
 
               </motion.div>
