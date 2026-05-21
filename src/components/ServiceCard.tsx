@@ -1,10 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { LucideIcon } from 'lucide-react';
 
 interface ServiceCardProps {
-  icon: LucideIcon;
+  icon: React.ElementType<{ size?: string | number; className?: string }>;
   title: string;
   description: string;
   delay?: number;
