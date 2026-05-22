@@ -5,7 +5,7 @@ import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { motion } from 'framer-motion';
-import { Phone, MapPin, Clock, Mail, MessageCircle, Sparkles } from 'lucide-react';
+import { Phone, MapPin, Clock, Mail, MessageCircle } from 'lucide-react';
 
 export default function Contact() {
   const locations = [
@@ -80,7 +80,7 @@ export default function Contact() {
                 Contact Information
               </motion.span>
               <h2 className="text-5xl md:text-6xl font-bold text-white mt-6 mb-4 font-serif">
-                Let's <span className="text-[#c9a84c]">Connect</span>
+                Let&apos;s <span className="text-[#c9a84c]">Connect</span>
               </h2>
               <p className="text-lg text-gray-400 mb-10 font-light leading-relaxed">
                 Have questions or need a quote? Reach out to us through any of the channels below. Our team responds promptly to all inquiries.
@@ -208,7 +208,7 @@ export default function Contact() {
               Serving <span className="text-[#c9a84c]">Malawi</span>
             </h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto font-light">
-              We provide professional fumigation services across Malawi's major cities and surrounding areas.
+              We provide professional fumigation services across Malawi&apos;s major cities and surrounding areas.
             </p>
           </motion.div>
 

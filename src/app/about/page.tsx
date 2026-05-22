@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { motion } from 'framer-motion';
-import { Award, Shield, Users, Clock, CheckCircle, Target, Search, SprayCan, ShieldCheck, Sparkles } from 'lucide-react';
+import { Award, Shield, Users, Target, Search, SprayCan, ShieldCheck, Sparkles } from 'lucide-react';
 
 export default function About() {
   const processSteps = [
@@ -163,10 +163,10 @@ export default function About() {
                 Champion Fumigation Services was founded with a simple mission: to provide Malawi with world-class pest control solutions that are safe, effective, and affordable.
               </p>
               <p className="text-lg text-gray-600 font-light leading-relaxed mb-8">
-                Over the years, we've grown from a small local operation to a trusted industry leader serving clients across Lilongwe and Kanengo. Our commitment to quality, safety, and customer satisfaction has earned us the trust of homeowners, businesses, and agricultural enterprises throughout the country.
+                Over the years, we&apos;ve grown from a small local operation to a trusted industry leader serving clients across Lilongwe and Kanengo. Our commitment to quality, safety, and customer satisfaction has earned us the trust of homeowners, businesses, and agricultural enterprises throughout the country.
               </p>
               <p className="text-lg text-gray-600 font-light leading-relaxed">
-                We believe that every client deserves personalized attention and tailored solutions. That's why we invest in ongoing training for our technicians, stay updated with the latest industry advancements, and maintain the highest standards of service excellence.
+                We believe that every client deserves personalized attention and tailored solutions. That&apos;s why we invest in ongoing training for our technicians, stay updated with the latest industry advancements, and maintain the highest standards of service excellence.
               </p>
             </motion.div>
 

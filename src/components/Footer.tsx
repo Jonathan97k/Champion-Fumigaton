@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { MessageCircle, MapPin, Phone, Clock } from 'lucide-react';
 
 export default function Footer() {
@@ -65,7 +66,7 @@ export default function Footer() {
             <h4 className="text-[#c9a84c] text-xs font-semibold uppercase tracking-[0.2em] mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <a href="/" className="text-gray-500 hover:text-[#c9a84c] transition-colors text-sm">Home</a>
+                <Link href="/" className="text-gray-500 hover:text-[#c9a84c] transition-colors text-sm">Home</Link>
               </li>
               <li>
                 <a href="/about" className="text-gray-500 hover:text-[#c9a84c] transition-colors text-sm">About Us</a>

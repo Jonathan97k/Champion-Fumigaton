@@ -244,7 +244,7 @@ export default function Home() {
                 The <span className="gradient-text">Trusted</span> Choice
               </h2>
               <p className="text-xl text-gray-300 mb-12 font-light leading-relaxed">
-                We don't just spray — we solve. Our expert technicians use proven, safe methods to deliver uncompromising protection that lasts.
+                We don&apos;t just spray — we solve. Our expert technicians use proven, safe methods to deliver uncompromising protection that lasts.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
